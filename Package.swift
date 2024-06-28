@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "MyDemoSwiftUI",
+    platforms: [.iOS("13.0"),.macOS("10.15")], // SwiftUI 1.0 & MacOS Catalina
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
