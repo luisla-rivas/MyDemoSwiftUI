@@ -8,7 +8,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-struct OfflineView: View {
+public struct OfflineView: View {
     var body: some View {
         ZStack {
             Rectangle()

@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension Image {
-    func resizedToFill(width: CGFloat, height: CGFloat) -> some View {
+    public func resizedToFill(width: CGFloat, height: CGFloat) -> some View {
         return self
             .resizable()
             .aspectRatio(contentMode: .fill)
@@ -16,7 +16,7 @@ extension Image {
             .clipped()
         }
     
-    func resizedToFit(width: CGFloat, height: CGFloat) -> some View {
+    public func resizedToFit(width: CGFloat, height: CGFloat) -> some View {
         return self
             .resizable()
             .aspectRatio(contentMode: .fit)

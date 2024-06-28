@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MyTextField: View {
+public struct MyTextField: View {
     let label:String
     @Binding var text:String
     var validation:((String) -> String?)?

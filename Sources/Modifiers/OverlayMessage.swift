@@ -48,14 +48,16 @@ struct OverlayMessageViewModifier: ViewModifier {
 }
 
 extension View {
-    func overlayMessage(_ message: Binding<String>) -> some View {
+    public func overlayMessage(_ message: Binding<String>) -> some View {
         modifier(OverlayMessageViewModifier(message: message))
     }
 }
 
-#Preview {
-    @State var message = "Item corretly saved!"
-    return Color(.yellow)
-        .overlayMessage($message)
-        .edgesIgnoringSafeArea(.all) //.ignoresSafeArea()
-}
+/*
+ #Preview {
+ @State var message = "Item corretly saved!"
+ return Color(.yellow)
+ .overlayMessage($message)
+ .edgesIgnoringSafeArea(.all) //.ignoresSafeArea()
+ }
+ */

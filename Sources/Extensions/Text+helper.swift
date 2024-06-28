@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension Text {
-    func myRCBTitleStyle() -> some View {
+    public func myRCBTitleStyle() -> some View {
         return self
             .font(.custom("Arial Rounded MT Bold", size: 28)) //.font(.title)
             //.fontDesign(.rounded) //iOS16: .fontDesign(.rounded)
