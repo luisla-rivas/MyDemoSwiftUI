@@ -9,7 +9,7 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public struct OfflineView: View {
-    var body: some View {
+    public var body: some View {
         ZStack {
             Rectangle()
                 .fill(.black.opacity(0.10)) //.fill(.regularMaterial)

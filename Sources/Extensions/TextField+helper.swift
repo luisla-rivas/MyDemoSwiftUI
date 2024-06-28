@@ -15,7 +15,7 @@ public struct MyTextField: View {
     @State var error = false
     @State var errorMsg = ""
     
-    var body: some View {
+    public var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             Text(label)
                 .font(.headline)
